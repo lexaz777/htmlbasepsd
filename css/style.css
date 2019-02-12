@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.slider {
+    background-image: url(../img/slider-img.jpg);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+}
+
+.slider-h4 {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    /* Text style for "TRENDING" */
+    color: #43a047;
+    letter-spacing: 1.8px;
+}
+
+.slider-h2 {
+    color: #212121;
+    font-size: 62px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -2.4px;
+}
+
+.slider-p {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    margin-top: 15px;
+}
+
+.button {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212121;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+    width: 212px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #f9f9f9;
+}
+
+.button:active {
+    box-shadow: 0 0 5px 1px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-top: 57px;
+}
+
+.circle {
+    transition: transform 0.3s;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #212121;
+    opacity: 0.2;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle:hover {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.circle-active {
+    opacity: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    margin-top: 57px;
+}
+
+.menu-link {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 13px;
+    display: block;
+}
+
+.menu-link:hover {
+    color: #212121;
+}
+
+.menu-link-active {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid #212121;
+}
+
+.slider-text {
+    width: 458px;
+}
+
+.featured-products {
+    height: 370px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-menu {
+    display: flex;
+}
+
+.featured-menu li {
+    list-style-type: none;
+}
+
+.featured-menu a {
+    display: block;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.featured-menu .active-menu {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    border-bottom: 3px solid #212121;
+}
+
+.featured-menu .active-menu:hover {
+    border-bottom: 2px solid #212121;
+}
+
+.featured-flex > a {
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+}
+
+.promo-product {
+    display: flex;
+    height: 683px;
+}
+
+.left-promo-product {
+    height: 683px;
+    width: 50%;
+    background-image: url(../img/promo-img1.jpg);
+    padding-top: 228px;
+    padding-right: 250px;
+    padding-left: 50px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.right-promo-product {
+    height: 683px;
+    padding-top: 228px;
+    padding-right: 250px;
+    padding-left: 50px;
+    width: 50%;
+    box-sizing: border-box;
+    background-image: url(../img/promo-img.jpg);
+}
+
+.featured-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.product {
+    position: relative;
+}
+
+.product:hover .product-text {
+    display: block;
+}
+
+.product-text {
+    border-width: 1px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 270px;
+    height: 270px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.product-text a {
+    display: block;
+    margin: 0 auto;
+    margin-top: 62px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 48px;
+    height: 48px;
+    color: black;
+    line-height: 48px;
+    font-size: 26px;
+}
+
+.product-text h3 {
+    color: #212121;
+    font-size: 21.91px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.product-text p {
+    color: #6c6c6c;
+    font-size: 13.94px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+}
+
+.trending-products .text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 119px;
+    margin-bottom: 64px;
+}
+
+.trending-products h2 {
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+.trending-products .text > a {
+    height: 13px;
+    color: #6c6c6c;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-decoration: none;
+}
+
+.trending-imgs {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
+    height: 770px;
+}
+
+.trend-img {
+    display: block;
+    max-width: 100%;
+    transition: all 1s;
+}
+
+.trending-imgs a:hover .trend-img {
+    transform: scale(1.1);
+}
